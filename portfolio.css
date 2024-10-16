@@ -1,0 +1,232 @@
+body {
+    font-family: 'Roboto', sans-serif;
+
+}
+
+/* Navbar styling */
+.navbar-nav .nav-link {
+    color: black;
+    margin: 0 10px; /* Augmentation de l'espacement entre les éléments */
+}
+.yam{
+  width: 100px;
+  height: 75px;
+}
+.navbar-nav .nav-link:hover {
+    color: #A22280;
+}
+
+/* Demi-cercle */
+.half-circle {
+    position: relative;
+    overflow: hidden;
+    width: 850px;
+    height: 390px; /* Demi-hauteur */
+    background-color: #A22280;
+    border-top-left-radius: 425px;
+    border-top-right-radius: 425px;
+}
+
+/* Image à l'intérieur du demi-cercle */
+img.position-absolute {
+    width: 455px;
+    height: 455px;
+    top: -60px; /* Ajustement pour que l'image dépasse légèrement */
+   justify-content: center;
+}
+
+/* Espacement des éléments du menu */
+.navbar-nav .nav-link {
+    margin: 0 20px; /* Augmenter l'espacement */
+}
+.btn btn-warning{
+    width: 50px;
+}
+/* Styling for the About section */
+
+/* Rectangle gris */
+#about .col-12 {
+    position: relative;
+    padding: 50px;
+    background-color: #D9D9D9;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+/* Rectangle jaune à gauche */
+.yellow-box {
+    background-color: #FFC107;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 20px;
+    width: 33%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+}
+
+/* Image positionnée sur le rectangle jaune */
+#about img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    top: 30px;
+    left: 20px;
+}
+
+/* Styling du texte et du bouton */
+#about h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#about p {
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 20px;
+}
+
+#about a {
+    background-color: #A22280;
+    color: white;
+    padding: 10px 20px;
+    text-transform: uppercase;
+}
+
+/* Trait jaune sous le titre */
+hr {
+    width: 80px;
+    height: 4px;
+    background-color: #FFC107;
+    margin-bottom: 20px;
+}
+
+/* Petite bordure violette */
+.border-bottom {
+    background-color: #A22280;
+    height: 5px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+#services h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .service-box {
+    display: flex;
+    align-items: center;
+    background-color: #f1f1f1;
+    padding: 2rem;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+  
+  /* Blocs violets avec texte blanc */
+  .violet {
+    background-color: #A22280; /* Violet */
+    color: white;
+  }
+  
+  .service-box h4 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .service-box p {
+    margin: 0;
+    font-size: 1rem;
+  }
+  
+  .service-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Pentagone avec bordure arrondie */
+  .pentagon-border {
+    width: 60px;
+    height: 60px;
+    border: 3px solid; /* Bordure seulement */
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+    margin-right: 20px;
+  }
+  
+  /* Bordures des pentagones */
+  .violet .pentagon-border {
+    border-color: white; /* Pentagone des blocs violets */
+  }
+  
+  #service1 .pentagon-border, #service4 .pentagon-border {
+    border-color: #A22280; /* Pentagone des autres blocs en violet */
+  }
+  
+  #service1, #service4 {
+    background-color: #D9D9D9; /* Fond gris clair */
+    color: black; /* Texte noir */
+  }
+  
+  #service1 h4, #service4 h4 {
+    color: #A22280; /* Titre en violet */
+  }
+  
+  /* Outils utilisés : des rectangles arrondis à 100% */
+  .tools-used {
+    margin-top: 2rem;
+  }
+  
+  .tool-box {
+    background-color: #D9D9D9;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 50px;
+    width: 200px;
+    height: 50px;
+    display: inline-block;
+    transition: transform 0.3s ease;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tool-box:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Animation Hover pour les images */
+  #service1:hover::after,
+  #service2:hover::before,
+  #service3:hover::before,
+  #service4:hover::before {
+    content: "";
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    width: 100px;
+    height: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  
+  #service1:hover::after {
+    background-image: url('photos\4.png');
+  }
+  
+  #service2:hover::before {
+    background-image: url('ui-ux-design.png');
+  }
+  
+  #service3:hover::before {
+    background-image: url('photos\1.png');
+  }
+  
+  #service4:hover::before {
+    background-image: url('montage-video.png');
+  }
+  .dropdown-menu {
+    justify-content: right;
+    align-items: flex-end;
+  }
